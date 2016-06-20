@@ -1,0 +1,9 @@
+.DS_Store
+*.o
+code/KSP/ksp
+data/apidis_output.txt
+log.txt
+model.lp
+*.mexmaci64
+*.mexa64
+tmp/
