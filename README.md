@@ -3,6 +3,7 @@
 This is a code for simultaneous tracking of the ball and the players in team sports.
 
 For more details about the algorithm used,  please refer to and consider citing the following paper:
+
 ```
 @article{maksai2015players,
   title={What Players do with the Ball: A Physically Constrained Interaction Modeling},
@@ -13,14 +14,15 @@ For more details about the algorithm used,  please refer to and consider citing 
 ```
 
 Provided is the ground truth data from the publicly available [APIDIS](http://sites.uclouvain.be/ispgroup/index.php/Softwares/APIDIS) dataset, along with detections obtained by us. If you plan on using any part of this dataset, please refer to and consider citing the following paper:
+
 ```
 @inproceedings{de2008distributed,
   title={Distributed video acquisition and annotation for sport-event summarization},
   author={De Vleeschouwer, Christophe and Chen, Fan and Delannay, Damien and Parisot, Christophe and Chaudy, Christophe and Martrou, Eric and Cavallaro, Andrea and others},
   booktitle={NEM summit 2008:: Towards Future Media Internet},
   year={2008}
-}```
-
+}
+```
 
 # Building and Dependencies
 
@@ -47,7 +49,7 @@ The config file contains the necessary explanations. Top of the file contains se
 # Data format
 
 People detections file have the format of Probability Occupancy Map ([POM](http://cvlab.epfl.ch/software/pom)). For each frame T, for each discretized (X, Y) location on the ground, file T.pom contains a line:
-Y * GX + X\t0\tY * GX + X\tP
+Y * GX + X  0 Y * GX + X  P
 
 First number is the encoding of the location on the ground plane.
 Second number is the height.
