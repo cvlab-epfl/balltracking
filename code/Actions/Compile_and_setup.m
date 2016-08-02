@@ -27,7 +27,7 @@ eval('!mkdir tmp');
 % Modify these lines to correctly add your Gurobi distribution and license file
 addpath(genpath('/Library/gurobi604/mac64/matlab/'));
 setenv('GRB_LICENSE_FILE',...
-'/Users/andriimaksai/Desktop/OneDrive/PhD/Useful/gurobi_licences/gurobi.lic');
+'/Users/andriimaksai/GDrive/PhD/Useful/gurobi_licences/gurobi.lic');
 gurobi_setup();
 
 addpath(genpath('code/'));

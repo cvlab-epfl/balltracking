@@ -20,6 +20,7 @@ function [] = create_graph_vars()
 global FORMAT;
 global GRAPH;
 global CONST;
+global OPTVARS;
 
 GRAPH.MAX_NODES = OPTVARS.MAX_GRAPH;
 GRAPH.MAX_EDGES = OPTVARS.MAX_GRAPH;

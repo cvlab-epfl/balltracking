@@ -16,6 +16,7 @@
 %%/************************************************************************/
 
 clear all; close all; clc;
+addpath(genpath('.'));
 
 Compile_and_setup;
 

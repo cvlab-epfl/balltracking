@@ -18,6 +18,7 @@
 function [ ] = create_optimization_vars( )
 
     global OPT;
+    global OPTVARS;
 
     OPT.MAX_COEFS  = OPTVARS.MAX_COEFS;
     OPT.MAX_CONSTR = OPTVARS.MAX_CONSTR;
