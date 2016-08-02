@@ -59,11 +59,10 @@ CONST.GroundLevel = 250;
 % Define dataset information
 
 % Path to the directory with images. Only needed if you want visualization
-root = '/Volumes/cvlabdata1/cvlab/datasets_andrii/APIDIS/';
-DATASET.Source_fmt = [root, 'source/source_c%d_f%d.png'];
+DATASET.Source_fmt = ['images/apidis/source_c%d_f%d.png'];
 
 % Frame idxes
-CONFIG.Frames = 1:150;
+CONFIG.Frames = 10:150;
 
 % Defaulta camera view
 DATASET.DefaultCam = 6;
