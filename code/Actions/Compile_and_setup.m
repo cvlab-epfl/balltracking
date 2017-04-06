@@ -18,8 +18,12 @@
 % Compile necessary MEX files, C++ code, add Gurobi license
 eval('!rm code/Graph/Pruning/generate_viterbi_inner_c.mexmaci64 &');
 eval('!rm code/Graph/Pruning/generate_viterbi_inner_c.mexa64 &');
+eval('!rm code/Graph/Creating/find_close_nodes.mexmaci64 &');
+eval('!rm code/Graph/Creating/find_close_nodes.mexa64 &');
 eval('mex code/Graph/Pruning/generate_viterbi_inner_c.c');
+eval('mex code/Graph/Creating/find_close_nodes.c');
 eval('!mv generate_viterbi_inner_c.* code/Graph/Pruning/');
+eval('!mv find_close_nodes.* code/Graph/Creating/');
 
 eval('!cd code/KSP && make');
 eval('!mkdir tmp');
